@@ -45,7 +45,7 @@ export const deleteAllHandler = () => {
 };
 
 export const doneAllHandler = () => {
-  if (confirm("Are you sure to delete all lists?")) {
+  if (confirm("Are you sure to done all lists?")) {
     const allList = listGroup.querySelectorAll(".list");
     allList.forEach((list) => {
       list.querySelector(".list-done-check").checked = true;
